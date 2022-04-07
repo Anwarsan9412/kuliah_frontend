@@ -22,6 +22,8 @@ function AddMovieForm(props) {
   // Membuat state: isTitleError, isDateError
   const [isTitleError, setIsTitleError] = useState(false);
   const [isDateError, setIsDateError] = useState(false);
+  const [isImgError, setIsImgError] = useState(false);
+  const [isGenreError, setIsGenreError] = useState(false);
 
   /**
    * Membuat fungsi handleTitle
@@ -76,6 +78,12 @@ function AddMovieForm(props) {
     // Jika title kosong, set isTitleError true
     else if (date === "") {
       setIsDateError(true);
+    } 
+    else if (img === "") {
+      setIsImgError(true);
+    }
+    else if(genre === "") {
+      setIsGenreError(true);
     }
     // Jika tidak, maka push movie dan set error false
     else {
@@ -93,6 +101,8 @@ function AddMovieForm(props) {
 
       setIsTitleError(false);
       setIsDateError(false);
+      setIsImgError(false);
+      setIsGenreError(false);
     }
   }
 
@@ -152,6 +162,7 @@ function AddMovieForm(props) {
                Select Genre
               </label>      
               <select value={genre} onChange={handleGenre} name="genre" className={styles.form__select}>
+                <option value =''disabled selected>-- Choice --</option>
                 <option value="comedy">Comedy</option>
                 <option value="romance">Romance</option>
                 <option value="action">Action</option>
@@ -159,12 +170,13 @@ function AddMovieForm(props) {
                 <option value="drama">Drama</option>
                 <option value="fantasy">Fantasy</option>
               </select>
+              {isGenreError && <Alert>Genre Wajib Diisi</Alert>}
 
               <label htmlFor="image" className={styles.form__label}>
                 Url Image
               </label>
               <input type="url" id='img' value={img} onChange={handleImg} name='img' className={styles.form__input} />
-
+              {isImgError && <Alert>img Wajib Diisi</Alert>}
             </div>
             <div>
               <button className={styles.form__button}>Add Movie</button>
