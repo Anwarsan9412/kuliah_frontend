@@ -38,9 +38,8 @@ function Hero() {
         <div>
           <h2>{movie.Title}</h2>
           <h3>Genre: {movie.Genre}</h3>
-          <p>{movie.Plot}</p>
-          
-          <Button>Watch</Button>
+          <Text md>{movie.Plot} </Text>
+          <Button variant="primary">Watch</Button>
         </div>
         <div>
           <img src={movie.Poster} alt="placeholder" />
