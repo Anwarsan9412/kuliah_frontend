@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Anwarsan9412.github.io/kuliah_frontend/static/css/main.b9f2feba.css",
-    "main.js": "/Anwarsan9412.github.io/kuliah_frontend/static/js/main.fdec8e7c.js",
+    "main.js": "/Anwarsan9412.github.io/kuliah_frontend/static/js/main.aa9b2f27.js",
     "static/js/787.d02d9e27.chunk.js": "/Anwarsan9412.github.io/kuliah_frontend/static/js/787.d02d9e27.chunk.js",
     "index.html": "/Anwarsan9412.github.io/kuliah_frontend/index.html",
     "main.b9f2feba.css.map": "/Anwarsan9412.github.io/kuliah_frontend/static/css/main.b9f2feba.css.map",
-    "main.fdec8e7c.js.map": "/Anwarsan9412.github.io/kuliah_frontend/static/js/main.fdec8e7c.js.map",
+    "main.aa9b2f27.js.map": "/Anwarsan9412.github.io/kuliah_frontend/static/js/main.aa9b2f27.js.map",
     "787.d02d9e27.chunk.js.map": "/Anwarsan9412.github.io/kuliah_frontend/static/js/787.d02d9e27.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b9f2feba.css",
-    "static/js/main.fdec8e7c.js"
+    "static/js/main.aa9b2f27.js"
   ]
 }
